@@ -13,7 +13,7 @@ $(document).ready(() => {
         let comienza = seccion[i].fi;
         let modalidad = seccion[i].modalidad;
         let $divCarreras = $("<div></div>");
-        $($divCarreras).attr("class", "content-seccion");
+        $($divCarreras).attr("class", "content-seccion ");
         let $input = $("<input></input>");
         $($input).attr("class", "codigo");
         $($input).val(codigoNivel);

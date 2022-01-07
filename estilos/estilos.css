@@ -103,27 +103,29 @@ article {
   font-size: 2.5rem;
 }
 .subtitulos {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #205ab4;
   font-weight: bold;
 }
 .subtitulos p {
   font-size: 1.5rem;
 }
+
 #resultados-area,
 #resultados-pensum,
 #informacion {
   background-color: white;
-  padding: 20px;
-  border-radius: 30px;
+  padding: 10px;
+  border-radius: 20px;
   border: none;
 }
 #resultados-area h3,
-#resultados-pensum h3 {
+#resultados-pensum h3,
+.resul-carrera h3 {
   background: rgb(58, 126, 174);
   border-radius: 0.3em;
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 600;
   margin-bottom: 0.5em;
   padding: 0.5em;
@@ -133,9 +135,10 @@ article {
 }
 #resultados-pensum {
   display: none;
+  margin-top: 25%;
 }
 .codigo {
-  width: 150px;
+  width: 80%;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -145,16 +148,15 @@ article {
   border: none;
 }
 .col-3 {
-  width: 30%;
+  width: 25%;
 }
 .content-seccion,
 .content-cursos,
-.content-carreras,
 .content-area .content-pensum {
   background-color: white;
   border: 1px solid lightgray;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -163,6 +165,7 @@ article {
   align-content: center;
   text-align: center;
 }
+
 .content-periodo {
   width: 85%;
   height: auto;
@@ -189,16 +192,16 @@ article {
 }
 .content-carreras:hover {
   cursor: pointer;
-  transform: scale(1.09);
+  transform: scale(1.03);
+  background-color: rgb(253, 157, 97);
 }
-.content-seccion:hover {
-  cursor: pointer;
-  transform: scale(1.09);
-}
+.content-seccion:hover,
 .content-cursos:hover {
   cursor: pointer;
-  transform: scale(1.09);
+  transform: scale(1.07);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 }
+
 #resultados-area h4:hover {
   background: rgb(248, 198, 168);
   cursor: pointer;
@@ -207,16 +210,49 @@ h4 {
   padding: 15px;
   border-radius: 3px;
 }
-
-.content-carreras,
+h5 {
+  font-size: 0.9rem;
+}
+.icono {
+  margin-top: 10px;
+  background-color: orangered;
+  border-radius: 10px;
+  width: 15%;
+}
 .content-area {
   display: flex;
   flex-direction: column;
 
   height: auto;
 }
+.content-carreras {
+  display: flex;
+  height: auto;
+  width: 100%;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.content-carreras img {
+  width: 15%;
+  margin: 5px;
+}
+.resul-carrera {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
 
-.resul-carrera,
 .resul-curso {
   display: flex;
   height: auto;
@@ -228,8 +264,9 @@ h4 {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: 50%;
+  width: 40%;
   flex-wrap: nowrap;
+  margin: 3%;
 }
 #s3 img {
   margin: 5px;

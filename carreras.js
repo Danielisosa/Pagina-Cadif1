@@ -1,18 +1,21 @@
 function CargarCarreras(carr) {
   let url2 = " https://api.cadif1.com/carrera/";
   let urlMaterias = "http://api.cadif1.com/nivel/";
+  let $h3Carreras = $("<h3></h3>");
+  $($h3Carreras).text("Carreras Disponibles");
+  $(".resul-carrera").append($h3Carreras);
   for (let i = 0; i < carr.carreras.length; i++) {
     if (carr.carreras[i].activa == 1) {
       let nombreCarrera = carr.carreras[i].nombre;
       let $divCarreras = $("<div></div>");
-      $($divCarreras).attr("class", "content-carreras col-3");
+      $($divCarreras).attr("class", "content-carreras");
       $($divCarreras).attr("id", carr.carreras[i].id);
       let $img = $("<img></img>");
       $($img).attr("src", "./img/15.png");
-      let $h4 = $("<h4></h4>");
-      $($h4).text(nombreCarrera);
+      let $h5 = $("<h5></h5>");
+      $($h5).text(nombreCarrera);
       $($divCarreras).append($img);
-      $($divCarreras).append($h4);
+      $($divCarreras).append($h5);
       $(".resul-carrera").append($divCarreras);
     }
     console.log(carr.carreras[i].id);
@@ -60,9 +63,6 @@ function CargarCarreras(carr) {
                   $($divCont).attr("class", "content-info");
                   let $divTitulo = $("<div></div");
                   $($divTitulo).attr("class", "titulo");
-                  // let $icon = $("<img></img>");
-                  // $($icon).attr("src", "https://cadif1.com/img/iconos/5.png");
-                  // $($divTitulo).append($icon);
                   let $h2 = $("<h2></h2>");
                   $($h2).text(mat.nivel.titulo);
                   $($divTitulo).append($h2);
