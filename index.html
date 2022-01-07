@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./estilos/estilos.css">
+
+  <title>CADIF1</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div id="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="d-flex " style="width: 95%;">
+          <div class="container flex-inherit d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand justify-content-center" href="index.html">
+              <img id="logo" src="https://cadif1.com/img/template/logo-cadif1.svg" alt="">
+            </a>
+
+            <div class="col-9  collapse navbar-collapse justify-content-end" id="navbarNav">
+              <div class="navbar-nav  ">
+                <a class="nav-link active fw-bold" aria-current="page" href="#">La
+                  Academia</a>
+                <a class="nav-link fw-bold" href="#">Certificacion </a>
+                <a class="nav-link  fw-bold" href="#">Empleos</a>
+                <a class="nav-link fw-bold" href="#">Contacto</a>
+                <a class="nav-link fw-bold" href="#">Iniciar sesion</a>
+                <a class="nav-link fw-bold" href="registrarse.html">Registrarse</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="content" class="container-fluid">
+      <div id="carousel" class="">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/slider-camaras" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slider-carrera-electronica.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slider-carrera-electronica.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slider-carrera-fundamentos.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slider-curso-profesional.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slider-diseno.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slider-marketing.jpeg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/slider-photoshop.jpeg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="d-flex justify-content-center align-items-center ">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <a id="btn-carreras" class="d-flex flex-column justify-content-center align-items-center" href="#">
+            <img src="https://cadif1.com/img/servicios/iconos/carrera-informaticas.png" alt="">
+            <span class="text-1 text-white fw-bold">Carreras tecnicas</span>
+            <p class="text-white">Formate profesionalmente y prepárate para trabajar</p>
+          </a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <a class="d-flex flex-column justify-content-center align-items-center" id="btn-cursos" href="#">
+            <img src="https://cadif1.com/img/servicios/iconos/cursos-presenciales.png" alt="">
+            <span class="text-1 text-white fw-bold">Cursos Especializados</span>
+            <p class="text-white">Te preparamos para trabajar en corto tiempo</p>
+          </a>
+        </div>
+      </div>
+      <div id="contenedor-secund" class="container-fluid d-flex">
+        <section id="s1" class="col-8 d-flex flex-column">
+          <div class="d-flex flex-column">
+            <h2 id="titulo-seccion" class="mt-5 fw-normal ps-5">Cursos próximos a comenzar</h2>
+            <div id="resultados">
+            </div>
+          </div>
+          <div id="resultados2" class=" container-fluid">
+            <div id="resultados-cursos" class="d-flex flex-column">
+            </div>
+          </div>
+          <div id="resultado-info" class="container-fluid">
+            <div id="informacion" class="d-flex flex-column">
+            </div>
+          </div>
+        </section>
+        </section>
+        <section id="s3" class="col-4 d-flex flex-column align-items-center p-5">
+          <div id="cont-img">
+            <div class="mt-5">
+              <img src="https://cadif1.com/img/servicios/primera-clase.jpg" alt="">
+            </div>
+            <div>
+              <img src="https://cadif1.com/img/banners/alquiler-salones.png" alt="">
+            </div>
+          </div>
+          <div id="resultados-area" class="justify-content-center flex-column m-5">
+            <div class="content-area" style="display: flex; flex-direction: column; width: 100%; height: auto;">
+            </div>
+          </div>
+          <div id="resultados-pensum" class="justify-content-center flex-column mt-5">
+            <div class="content-pensum d-flex flex-column align-items-center" style="width: 100%; height: auto;">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+  <script src="index.js"></script>
+</body>
+
+
+</html>
