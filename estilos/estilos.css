@@ -297,12 +297,20 @@ h5 {
   background-color: #3584fa;
   border: 2px groove rgb(8, 60, 128);
 }
-/* @media screen and (min-width: 226px) and(max-width:990) {
-  logo {
-    position: relative;
-    right: 0;
-  }
-} */
+footer {
+  height: 200px;
+  background: white;
+}
+footer div {
+  padding: 5px;
+}
+footer ul {
+  padding: 0;
+}
+footer ul li {
+  list-style: none;
+  font-size: 0.9rem;
+}
 @media screen and (min-width: 226px) and (max-width: 990px) {
   #contenedor-secund {
     flex-direction: column;
