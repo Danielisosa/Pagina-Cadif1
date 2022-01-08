@@ -18,9 +18,7 @@ function CargarCarreras(carr) {
       $($divCarreras).append($h5);
       $(".resul-carrera").append($divCarreras);
     }
-    console.log(carr.carreras[i].id);
     let divCarr = $("#" + carr.carreras[i].id);
-    console.log(divCarr);
     $(divCarr).click(() => {
       $("#resultados-pensum").show();
 
@@ -34,7 +32,6 @@ function CargarCarreras(carr) {
 
         for (let i = 0; i < carr.carrera.pensum.length; i++) {
           let materias = carr.carrera.pensum[i];
-          console.log(carr.carrera.pensum[i]);
           let $divPeriodo = $("<div></div>");
           $($divPeriodo).attr("class", "content-periodo");
           let $h5 = $("<h5></h5>");
@@ -50,12 +47,9 @@ function CargarCarreras(carr) {
               $($li).attr("id", materias[j].idmateriaxservicio);
               $($li).text(materia);
               $($ul).append($li);
-              console.log($li);
               $($li).click(() => {
                 var idMateria = $($li).attr("id");
-                console.log(idMateria);
                 $.getJSON(urlMaterias + idMateria, (mat) => {
-                  console.log(mat);
                   $("#resultado-info").show();
                   $("#resultados").hide();
                   $("#informacion").empty();
