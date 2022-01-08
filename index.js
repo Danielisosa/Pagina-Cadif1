@@ -5,6 +5,7 @@ $(document).ready(() => {
     $("#resultados-area").hide();
     $("#resultado-info").hide();
     $("#resultados").empty();
+
     for (let i = 0; i < seccion.length; i++) {
       if (seccion[i].fi !== null) {
         let curso = seccion[i].materia;
@@ -73,21 +74,23 @@ $(document).ready(() => {
       $.getScript("cursos.js", () => {
         $.getJSON("curso.json", (cur) => {
           $(".resul-curso").empty();
+
           cargarCursos(cur);
         }).fail((cur) => {
           console.log("ocurrio un error en la peticion");
         });
       });
       $.getJSON("areadeestudio.json", (area) => {
-        $("#content-pensum").empty();
+        $(".content-area").empty();
+
         let $h3 = $("<h3></h3>");
         $($h3).text("Areas de estudios");
-        $("#resultados-area").append($h3);
+        $(".content-area").append($h3);
         for (let i = 0; i < area.areas.length; i++) {
           let nombreArea = area.areas[i].nombre;
           let $h4 = $("<h4></h4>");
           $($h4).text(nombreArea);
-          $("#resultados-area").append($h4);
+          $(".content-area").append($h4);
         }
       }).fail((area) => {
         console.log("ocurrio un error en la peticion");

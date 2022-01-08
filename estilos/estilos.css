@@ -165,7 +165,9 @@ article {
   align-content: center;
   text-align: center;
 }
-
+.content-cursos {
+  width: 30%;
+}
 .content-periodo {
   width: 85%;
   height: auto;

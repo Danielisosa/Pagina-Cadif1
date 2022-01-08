@@ -1,10 +1,12 @@
 function cargarCursos(cur) {
+  $("#resultados-pensum").hide();
+
   for (let i = 0; i < cur.cursos.length; i++) {
     let codigo = cur.cursos[i].codigo;
     let nombreCurso = cur.cursos[i].nombre;
     let objetivo = cur.cursos[i].objetivoresumido;
     let $divCursos = $("<div></div>");
-    $($divCursos).attr("class", "content-cursos col-3");
+    $($divCursos).attr("class", "content-cursos ");
     let $input = $("<input></input>");
     $($input).attr("class", "codigo");
     $($input).val(codigo);
