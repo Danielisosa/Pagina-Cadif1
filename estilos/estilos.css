@@ -16,6 +16,9 @@ body {
 #header nav {
   height: auto;
 }
+#header nav > div {
+  width: 100%;
+}
 #header nav a {
   border-radius: 10px;
   color: rgb(0, 84, 143);
@@ -27,7 +30,7 @@ body {
 #navbarNav a:hover {
   background: orangered;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 #content {
   width: 100%;
@@ -200,8 +203,8 @@ article {
 .content-seccion:hover,
 .content-cursos:hover {
   cursor: pointer;
-  transform: scale(1.07);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+  box-shadow: 1px 1px 1px 1px rgba(39, 39, 39, 0.548);
 }
 
 #resultados-area h4:hover {
