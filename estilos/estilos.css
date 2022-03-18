@@ -35,7 +35,7 @@ body {
 #content {
   width: 100%;
   height: auto;
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(241, 241, 241);
 }
 #logo {
   width: 80%;
@@ -314,6 +314,33 @@ footer ul li {
   list-style: none;
   font-size: 0.9rem;
 }
+/*LA ACADEMIA*/
+#menu2 {
+  background: rgb(0, 84, 143);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.img-right {
+  float: right;
+  background-color: white;
+  padding: 0;
+  text-align: center;
+  height: 270px;
+  margin-bottom: 1em;
+  margin-left: 1.8em;
+}
+.img-left {
+  float: left;
+  background-color: white;
+  padding: 0;
+  text-align: center;
+  height: 340px;
+  margin-bottom: 1em;
+  margin-right: 1.8em;
+}
+
 @media screen and (min-width: 226px) and (max-width: 990px) {
   #contenedor-secund {
     flex-direction: column;
