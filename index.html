@@ -14,19 +14,19 @@
 
 <body>
   <div class="container-fluid" style="background-color: rgb(241, 241, 241);">
-    <div id="header">
+    <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex">
         <div class="d-flex ">
-          <div class="container flex-inherit d-flex justify-content-between align-items-center">
+          <div class="container-fluid flex-inherit d-flex justify-content-between align-items-center">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand justify-content-center" href="index.html">
+            <a class="navbar-brand justify-content-center ps-5" href="index.html">
               <img id="logo" src="https://cadif1.com/img/template/logo-cadif1.svg" alt="">
             </a>
 
-            <div class="col-9  collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="col-9  collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
               <div class="navbar-nav  ">
                 <a class="nav-link active fw-bold" aria-current="page" href="laacademia.html">La
                   Academia</a>
@@ -38,7 +38,7 @@
           </div>
         </div>
       </nav>
-    </div>
+    </header>
     <div id="content" class="container-fluid">
       <div id="carousel" class="">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -74,15 +74,17 @@
         <div class="d-flex justify-content-center align-items-center flex-column">
           <a id="btn-carreras" class="d-flex flex-column justify-content-center align-items-center" href="#">
             <img src="https://cadif1.com/img/servicios/iconos/carrera-informaticas.png" alt="">
-            <span class="text-1 text-white fw-bold">Carreras tecnicas</span>
-            <p class="text-white">Formate profesionalmente y prepárate para trabajar</p>
+            <h2 class="text-1 text-white ">Carreras Técnicas</h2>
+            <p class="text-white ">Formate integral y profesionalmente en un área de estudio y preparate
+              para trabajar.
+            </p>
           </a>
         </div>
         <div class="d-flex justify-content-center align-items-center flex-column">
           <a class="d-flex flex-column justify-content-center align-items-center" id="btn-cursos" href="#">
             <img src="https://cadif1.com/img/servicios/iconos/cursos-presenciales.png" alt="">
-            <span class="text-1 text-white fw-bold">Cursos Especializados</span>
-            <p class="text-white">Te preparamos para trabajar en corto tiempo</p>
+            <h2 class="text-1 text-white ">Cursos Especializados</h2>
+            <p class="text-white">Hazte un experto en los temas relacionados con la computación y la informática.</p>
           </a>
         </div>
       </div>
@@ -103,18 +105,27 @@
           </div>
         </section>
         </section>
-        <section id="s3" class="col-3 d-flex flex-column align-items-center p-2 mt-5">
+        <section id="s3" class="col-3 d-flex flex-column align-items-center ps-3 pe-3 mt-5">
           <div id="cont-img">
             <div class="mt-5">
-              <img src="https://cadif1.com/img/servicios/primera-clase.jpg" alt="">
+              <img class="images" src="https://cadif1.com/img/servicios/primera-clase.jpg" alt="">
             </div>
             <div>
-              <img src="https://cadif1.com/img/banners/alquiler-salones.png" alt="">
+              <img class="images" src="https://cadif1.com/img/banners/alquiler-salones.png" alt="">
             </div>
           </div>
           <div id="resultados-area" class="justify-content-center flex-column m-5">
-            <div class="content-area" style="display: flex; flex-direction: column; width: 100%; height: auto;">
+            <div class="content-area">
             </div>
+          </div>
+          <div class="container-fluid">
+            <div class="resul-carrera container-fluid">
+            </div>
+
+
+
+
+
           </div>
           <div id="resultados-pensum" class="justify-content-center flex-column">
             <div class="content-pensum d-flex flex-column align-items-center" style="width: 100%; height: auto;">
@@ -123,18 +134,18 @@
         </section>
       </div>
     </div>
-    <footer class="container-fluid d-flex flex-column align-items-center">
-      <div class="col-12 d-flex pt-3 ">
-        <div class="col-2 ps-3">
+    <footer id="footer" class="container-fluid ">
+      <div class="container-fluid d-flex pt-3 justify-content-between ">
+        <div class=" ps-4">
           <span class="fw-bold">Llámanos:</span>
           <p>+58 (0251) 441.61.00</p>
         </div>
-        <div class="col-4 ps-3">
+        <div class=" ps-4">
           <span class="fw-bold">Visítanos:</span>
           <p>av. Pedro León Torres con calle 59, C.C. Sotavento, Piso 2, Local 27, Barquisimeto Estado Lara, Venezuela.
-            Google Maps</p>
+          </p>
         </div>
-        <div class="col-2 ps-3">
+        <div class="ps-4">
           <span class="fw-bold">Escríbenos:</span>
           <ul>
             <li>WhatsApp</li>
@@ -142,7 +153,7 @@
             <li>contacto@cadif1.com</li>
           </ul>
         </div>
-        <div class="col-2 ps-3">
+        <div class=" ps-4">
           <span class="fw-bold">Síguenos:</span>
           <ul>
             <li>instagram.com/cadif1</li>
@@ -150,8 +161,8 @@
             <li>facebook.com/cadif1</li>
           </ul>
         </div>
-        <div class="col-2 ps-3">
-          <img src="https://cadif1.com/img/template/cadif1-15-aniversario.svg" alt="" style="width: 60%;">
+        <div class=" ps-5">
+          <img id="iconoAniversario" src="https://cadif1.com/img/template/cadif1-15-aniversario.svg" alt="">
         </div>
 
       </div>

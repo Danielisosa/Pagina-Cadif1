@@ -8,29 +8,29 @@ body {
   height: auto;
   padding: 0;
 }
-#header {
+header {
   width: 100%;
   height: auto;
   background: white;
 }
-#header nav {
+header nav {
   height: auto;
 }
-#header nav > div {
+header nav > div {
   width: 100%;
 }
-#header nav a {
+.nav-link {
   border-radius: 10px;
-  color: rgb(0, 84, 143);
+  color: rgb(0, 84, 143) !important;
   text-transform: uppercase;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 0.8rem;
+  font-size: 1em;
+  border-radius: 5px;
 }
 #navbarNav a:hover {
   background: orangered;
-  color: white;
-  border-radius: 5px;
+  color: white !important;
 }
 #content {
   width: 100%;
@@ -49,6 +49,7 @@ body {
   background: rgb(0, 84, 143);
   width: 100%;
   height: 260px;
+  z-index: 10;
 }
 #menu a {
   text-decoration: none;
@@ -58,11 +59,13 @@ body {
   padding: 10px;
 }
 #menu img {
-  width: 30%;
-  height: 40%;
+  width: 90px;
+  height: 90px;
 }
 #s1 {
   height: auto;
+  width: 70%;
+  padding: 20px;
 }
 #resultados2 {
   display: none;
@@ -81,11 +84,12 @@ body {
 #resultados-area,
 #resultados-pensum,
 #informacion,
-.titulo {
+.content-area .titulo {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
   /* flex-direction: column; */
 }
 #resultado-info,
@@ -122,6 +126,10 @@ article {
   border-radius: 20px;
   border: none;
 }
+#resultados-area {
+  position: relative;
+  top: 20px;
+}
 #resultados-area h3,
 #resultados-pensum h3,
 .resul-carrera h3 {
@@ -138,7 +146,8 @@ article {
 }
 #resultados-pensum {
   display: none;
-  margin-top: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .codigo {
   width: 80%;
@@ -168,8 +177,17 @@ article {
   align-content: center;
   text-align: center;
 }
+
+.content-seccion h4 {
+  margin: 8px;
+}
+.content-seccion h3,
+.content-cursos h3 {
+  color: rgb(10, 95, 156);
+  margin: 15px;
+}
 .content-cursos {
-  width: 30%;
+  width: 27%;
 }
 .content-periodo {
   width: 85%;
@@ -212,13 +230,15 @@ article {
   cursor: pointer;
 }
 h4 {
-  padding: 15px;
+  /* padding: 15px; */
   border-radius: 3px;
 }
 h5 {
   font-size: 0.9rem;
 }
 .icono {
+  width: 90px;
+  height: 90px;
   margin-top: 10px;
   background-color: orangered;
   border-radius: 10px;
@@ -227,7 +247,7 @@ h5 {
 .content-area {
   display: flex;
   flex-direction: column;
-
+  padding: 5px;
   height: auto;
 }
 .content-carreras {
@@ -273,11 +293,13 @@ h5 {
   flex-wrap: nowrap;
   margin: 3%;
 }
-#s3 img {
+#s3 .images {
   margin: 5px;
   border: 15px solid white;
   border-radius: 10px;
   box-sizing: content-box;
+  width: 16rem;
+  height: 23rem;
 }
 #form-tittle {
   font-family: "Raleway", sans-serif;
@@ -340,8 +362,17 @@ footer ul li {
   margin-bottom: 1em;
   margin-right: 1.8em;
 }
-
-@media screen and (min-width: 226px) and (max-width: 990px) {
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#iconoAniversario {
+  width: 100px;
+  height: 100px;
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
   #contenedor-secund {
     flex-direction: column;
   }
@@ -350,5 +381,96 @@ footer ul li {
   }
   #s3 {
     width: 100%;
+    margin-bottom: 100px;
+  }
+  #menu {
+    height: 100px;
+  }
+  #menu p {
+    display: none;
+  }
+  #menu div {
+    margin: 10px;
+  }
+  #menu div a {
+    flex-direction: row !important;
+  }
+  #menu img {
+    width: 70px;
+    height: 70px;
+  }
+  #menu h2 {
+    font-size: 1.3rem;
+  }
+  #resultados-area {
+    display: none !important;
+  }
+
+  .content-cursos {
+    width: 45%;
+  }
+  .resul-carrera {
+    width: 80%;
+  }
+  footer > div:first-child {
+    justify-content: space-between;
+  }
+  footer > div > div:nth-child(2) {
+    display: none;
+  }
+  footer > div > div:nth-child(5) {
+    display: none;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 575px) {
+  #contenedor-secund {
+    flex-direction: column;
+  }
+  #s1 {
+    width: 100%;
+  }
+  #s3 {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  #menu {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+  }
+  #menu p {
+    display: none;
+  }
+  #menu div {
+    margin: 20px;
+  }
+  #menu div a {
+    flex-direction: row !important;
+  }
+  #menu h2 {
+    font-size: 1rem;
+  }
+  #menu img {
+    width: 50px;
+    height: 50px;
+  }
+  #resultados {
+    flex-direction: column;
+  }
+  .content-cursos,
+  .content-seccion {
+    width: 75%;
+  }
+
+  #resultados-area {
+    display: none;
+  }
+  .resul-carrera {
+    width: 80%;
+  }
+  #footer {
+    display: none;
   }
 }
