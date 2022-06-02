@@ -12,9 +12,9 @@ function cargarCursos(cur) {
     $($input).val(codigo);
     $($input).attr("disabled", "true");
     $($divCursos).append($input);
-    let $h4 = $("<h4></h4>");
-    $($h4).text(nombreCurso);
-    $($divCursos).append($h4);
+    let $h3 = $("<h3></h3>");
+    $($h3).text(nombreCurso);
+    $($divCursos).append($h3);
     let $p = $("<p></p>");
     $($p).text(objetivo);
     $($divCursos).append($p);

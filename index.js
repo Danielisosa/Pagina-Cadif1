@@ -5,6 +5,7 @@ $(document).ready(() => {
     $("#resultados-area").hide();
     $("#resultado-info").hide();
     $("#resultados").empty();
+    $(".resul-carrera").hide();
 
     for (let i = 0; i < seccion.length; i++) {
       if (seccion[i].fi !== null) {
@@ -20,12 +21,12 @@ $(document).ready(() => {
         $($input).val(codigoNivel);
         $($input).attr("disabled", "true");
         $($divCarreras).append($input);
-        let $h5 = $("<h5></h5>");
-        $($h5).text(nivel);
-        $($divCarreras).append($h5);
         let $h4 = $("<h4></h4>");
-        $($h4).text(curso);
+        $($h4).text(nivel);
         $($divCarreras).append($h4);
+        let $h3 = $("<h3></h3>");
+        $($h3).text(curso);
+        $($divCarreras).append($h3);
         let $span1 = $("<span></span>");
         $($span1).text("Comienza el " + comienza);
         $($divCarreras).append($span1);
@@ -40,6 +41,8 @@ $(document).ready(() => {
   $("#btn-carreras").click(() => {
     $("#titulo-seccion").hide();
     $("#resultados").show();
+    $(".resul-carrera").show();
+    $("#resultados-pensum").show();
     $("#cont-img").hide();
     $("#resultados2").hide();
     $("#resultados-area").hide();
@@ -64,9 +67,12 @@ $(document).ready(() => {
     $("#cont-img").hide();
     $("#titulo-seccion").hide();
     $("#resultados").hide();
+    $(".resul-carrera").hide();
+    $("#resultados-pensum").hide();
     $("#resultados-area").show();
     $("#resultados2").show();
     $("#resultados-area").css("display", "flex");
+
     $("#resultados-cursos").load("cursos.html", (a, b, c) => {
       if (b == "error") {
         $("#resultados-cursos").html("<p>Error al cargar el contenedor </p>");
