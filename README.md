@@ -1,5 +1,5 @@
 # Pagina Cadif1
-Clon de pagina de software Cadif1 usando la api de la academia para mostrar los cursos y carreras disponibles.
+Clon de pagina de software Cadif1 usando la api de la academia para mostrar dinamicamente con Ajax los cursos y carreras disponibles.
 
 🚧- Este proyecto aun esta en construccion, se intenta hacer el clon de la pagina oficial de la academia Cadif1. Aun falta realizar las otras secciones y hacer todo el diseño de manera responsivo
 ## Tecnologias Usadas:
